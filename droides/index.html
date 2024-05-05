@@ -1,0 +1,76 @@
+<head>
+    <meta charset = "UTF-8" />
+    <title>The Game of Life</title>
+    <link rel="stylesheet" href="life.css">    
+</head>
+<style>
+    body {
+    padding: 20px;
+    background-color: #969292;
+}
+
+#gridContainer {
+    padding-bottom: 10px;
+}
+
+h1{
+    color:#C5DEC6;
+}
+
+table {
+    background-color: #C5D6C6;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid #F1F5DA;
+    border-radius: 3px;
+    width: 10px;
+    height: 10px;
+}
+
+span {
+    color: #222;
+}
+
+#start,
+#clear,
+#set_gungano,
+#random {
+    padding: .75em;
+    border-radius: 5px;
+    border: none;    
+    background: linear-gradient(
+        to bottom right,
+        #C5DEC6, #587559);
+}
+
+td.dead {
+    background-color: transparent;
+}
+
+td.live {
+    background-color: #CC4774;
+    border-radius: 10px;
+}
+td.gungano{
+    background-color: #f93a00;
+}
+    </style>
+<body>
+<h1>Batalla de Naboo (Droides vs Gunganos)</h1>
+<p>Nombre: Diego Joel Condori Quispe</p>
+<div id="gridContainer">
+    
+</div>
+
+<div class="controls">
+<button id="start"><span>Iniciar</span></button>
+<button id="set_gungano"><span>Setear Gunganos</span></button>
+<button id="clear"><span>Limpiar</span></button>
+<button id="random"><span>Random</span></button>
+</div>
+<div id="info"></div>
+<script src="main.js"></script>
+    
+</body>
